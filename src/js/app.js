@@ -53,8 +53,8 @@ function SortSourceData(data, key, SortOrder) {
     const y = b[key];
     if (SortOrder === 1) {
       return (x >= y) ? 1 : -1;
-    }
-    return 0;
+    } 
+    return (x >= y) ? -1 : 1;
   });
 }
 
