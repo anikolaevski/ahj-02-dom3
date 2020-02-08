@@ -99,7 +99,7 @@ function doAction() {
   const sortKey = sortKeys[sortIndex];
   SortSourceData(SourceData, tableKey, sortKey);
   const taskinfo = document.getElementById('taskinfo');
-  taskinfo.innerText = `Sort by ${tableKey} ${(sortKey === 1) ? 'asc' : 'desc'}`;
+  taskinfo.innerText = `Sort by "${tableKey}" ${(sortKey === 1) ? 'asc' : 'desc'}`;
   RenderTable(SourceData, 'workplace');
 }
 
